@@ -45,12 +45,16 @@ function App() {
   }, [])
   return (
     <>
+    <h1 className="heading">Cloth Store</h1>
       <div className="nav">
-        <button onClick={() => filtermen()}>men</button>
-        <button onClick={() => filterjewelery()}>jewelery</button>
-        <button onClick={() => filterelectronics()}>electronics</button>
-        <button onClick={() => filterwomen()}>women</button>
-        <button onClick={() => Setfilterdata(Alldata)}>all</button>
+        <div className="btn-main">
+        <button className='change-btn' onClick={() => filtermen()}>men</button>
+        <button className='change-btn' onClick={() => filterjewelery()}>jewelery</button>
+        <button className='change-btn' onClick={() => filterelectronics()}>electronics</button>
+        <button className='change-btn' onClick={() => filterwomen()}>women</button>
+        <button className='change-btn' onClick={() => Setfilterdata(Alldata)}>All</button>
+        </div>
+       
       </div>
       <div className="card-main">
         <div className="main">
